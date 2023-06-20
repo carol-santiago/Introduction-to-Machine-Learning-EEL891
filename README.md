@@ -44,7 +44,3 @@ Para cada trabalho, siga as instruções abaixo:
 ## Relatórios
 
 Cada trabalho requer a escrita de um relatório descrevendo todas as etapas do trabalho, desde o pré-processamento dos dados até os resultados alcançados. Os relatórios devem ser enviados por e-mail para o professor juntamente com o código-fonte utilizado.
-
-Para mais detalhes, consulte as descrições completas de cada trabalho e os arquivos fornecidos em seus respectivos diretórios.
-
-Observação: Este é um exemplo fictício e não contém links reais para os arquivos ou endereço de e-mail do professor.
