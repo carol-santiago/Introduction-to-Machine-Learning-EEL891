@@ -11,7 +11,7 @@
 
 Escreva um relatório descrevendo todos os passos do seu trabalho (pré-processamento dos dados, seleção dos atributos, modelos preditivos experimentados e seus respectivos ajustes de hiperparâmetros, técnicas de validação utilizadas, resultados intermediários alcançados, etc.).
 
-Envie um e-mail para o professor (heraldo@poli.ufrj.br) contendo:
+Envie um e-mail para o professor contendo:
 
 - O seu id no Kaggle
 - O código-fonte utilizado (para possibilitar a reprodução dos resultados relatados)
