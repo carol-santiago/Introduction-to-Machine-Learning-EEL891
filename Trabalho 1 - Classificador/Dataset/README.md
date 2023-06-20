@@ -86,5 +86,3 @@ Aqui estão alguns comandos úteis do Pandas para análise de dados, que podem s
 - `df.plot(x='coluna1', y='coluna2', kind='tipo_de_gráfico')`: Gera um gráfico com base em duas colunas do DataFrame.
 
 Lembre-se de consultar a [documentação oficial do Pandas](https://pandas.pydata.org/docs/) para obter mais informações sobre cada comando e explorar outras funcionalidades.
-
-Espero que esses comandos sejam úteis para sua análise de dados!
