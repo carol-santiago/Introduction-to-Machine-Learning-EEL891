@@ -16,12 +16,15 @@ def load_dataset():
     return df_train
 
 
-# %%
-# TESTES
 df_train = load_dataset()
 df_train.drop(columns=['id_solicitante'], inplace=True)
-for i in range(len(df_train.columns)):
-    print(df_train.columns[i], i)
+
+
+# %%
+# TESTES
+df_train.drop(columns=['id_solicitante'], inplace=True)
+# for i in range(len(df_train.columns)):
+#     print(df_train.columns[i], i)
 
 # %%
 # Criar um gráfico de barras para visualizar a distribuição dos dados
@@ -51,7 +54,17 @@ for i in range(len(df_train.columns)):
 
 
 def scatter_matrix_all(df):
-    scatter_matrix(df, figsize=(12, 12), alpha=0.5, diagonal='hist')
+    atributo = df.iloc[:, :-1]
+    mapa_cores = ['red', 'green', 'aqua']
+    cores_amostras = [mapa_cores[i] for i in df.iloc[:, -1]]
+    pd.plotting.scatter_matrix(
+        atributo[atributo.columns[:11]],
+        figsize=(13, 13),
+        c=cores_amostras,
+        marker='o',
+        s=50,
+        alpha=0.5,
+        diagonal='hist')
     plt.show()
 
 
@@ -62,7 +75,11 @@ scatter_matrix_all(df_train)
 
 
 def matriz_de_correlacao(df):
-    correlation_matrix = df.corr()
+    atributo = df.iloc[:, :-1]
+    correlation_matrix = atributo[atributo.columns[20:30]].corr()
+    if correlation_matrix.empty:
+        print('Não há correlação entre as variáveis')
+    print(correlation_matrix)
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
     plt.title('Matriz de Correlação')
     plt.show()
@@ -82,10 +99,12 @@ def grafico_de_dispersao(df, variavel1, variavel2):
     plt.show()
 
 
-for i in range(len(df_train.columns)):
-    for j in range(len(df_train.columns)):
-        grafico_de_dispersao(
-            df_train, df_train.columns[i], df_train.columns[j])
-        plt.show()
+# grafico_de_dispersao(df_train, df_train.columns[0], df_train.columns[1])
+
+i = 2
+for j in range(len(df_train.columns)):
+    grafico_de_dispersao(
+        df_train, df_train.columns[i], df_train.columns[j])
+    plt.show()
 
 # %%
