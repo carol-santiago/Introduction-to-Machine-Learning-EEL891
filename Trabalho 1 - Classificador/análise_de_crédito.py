@@ -21,12 +21,6 @@ df_train.drop(columns=['id_solicitante'], inplace=True)
 
 
 # %%
-# TESTES
-df_train.drop(columns=['id_solicitante'], inplace=True)
-# for i in range(len(df_train.columns)):
-#     print(df_train.columns[i], i)
-
-# %%
 # Criar um gráfico de barras para visualizar a distribuição dos dados
 
 
