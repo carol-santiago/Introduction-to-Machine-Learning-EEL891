@@ -1,19 +1,3 @@
-# Instruções
-
-- Baixe os arquivos de dados do projeto, disponíveis na aba "Data", onde você encontrará também a descrição dos arquivos e o significado de todos os campos neles contidos.
-- Implemente o pré-processamento adequado (tratamento de atributos categóricos, utilização de fatores de escala, etc.).
-- Visualize, analise e selecione os atributos com maior potencial preditivo.
-- Escolha os modelos preditivos de sua preferência e construa um script Python para testá-los.
-- Verifique o desempenho dos modelos preditivos escolhidos por meio de validação cruzada, ou outra técnica de validação de sua preferência, usando o conjunto de treinamento fornecido.
-- Ajuste os hiperparâmetros e o conjunto de variáveis utilizadas pelo modelo preditivo, de modo a reduzir o erro obtido na validação cruzada.
-- Quando estiver satisfeito com o ajuste, treine o seu modelo preditivo usando o conjunto de treinamento completo, obtenha a previsão do modelo para o conjunto de teste fornecido e submeta ao Kaggle (que detém o gabarito oculto do conjunto de teste), para verificar o desempenho real do seu modelo preditivo.
-- Revise e repita os passos anteriores quantas vezes achar necessário, até ficar satisfeito com o resultado.
-- Escreva um relatório descrevendo todos os passos do seu trabalho (pré-processamento dos dados, seleção dos atributos, modelos preditivos experimentados e seus respectivos ajustes de hiperparâmetros, técnicas de validação utilizadas, resultados intermediários alcançados, etc.).
-- Envie um e-mail para o professor (heraldo@poli.ufrj.br) contendo:
-  - o seu id no Kaggle
-  - o código-fonte utilizado (para possibilitar a reprodução dos resultados relatados)
-  - o seu relatório (o relatório poderá ser entregue em um arquivo separado no formato PDF, ou integrado no próprio código-fonte, caso seja utilizado Jupyter Notebook ou Google Colab).
-
 # Dataset Description
 
 Trata-se de um conjunto de dados contendo informações a respeito de 6683 imóveis residenciais de uma cidade brasileira, coletados de ofertas de venda publicadas em site especializado. São fornecidos um conjunto de treinamento, um conjunto de teste e um exemplo de arquivo de submissão de resposta, todos em formato CSV.
